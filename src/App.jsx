@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useNavigate, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Github, Linkedin, Calendar, MapPin, Briefcase, ChevronDown, ArrowRight } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
@@ -88,9 +88,9 @@ const Footer = () => (
   <footer className="w-full flex justify-center items-center gap-6 py-8 text-white/40 pointer-events-auto bg-black/10 backdrop-blur-sm z-50 relative">
     <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 transform hover:scale-110"><Github size={18} /></a>
     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 transform hover:scale-110"><Linkedin size={18} /></a>
-    <a href="/goals" className="ml-2 px-3 py-1 text-sm bg-white/5 hover:bg-white/10 rounded-md border border-white/10 hover:border-white/30 transition-colors">Goals Chart Organizer</a>
-    <a href="/skills" className="ml-2 px-3 py-1 text-sm bg-white/5 hover:bg-white/10 rounded-md border border-white/10 hover:border-white/30 transition-colors">Skills</a>
-    <a href="/letter" className="ml-2 px-3 py-1 text-sm bg-white/5 hover:bg-white/10 rounded-md border border-white/10 hover:border-white/30 transition-colors">Letter</a>
+    <Link to="/goals" className="ml-2 px-3 py-1 text-sm bg-white/5 hover:bg-white/10 rounded-md border border-white/10 hover:border-white/30 transition-colors">Goals Chart Organizer</Link>
+    <Link to="/skills" className="ml-2 px-3 py-1 text-sm bg-white/5 hover:bg-white/10 rounded-md border border-white/10 hover:border-white/30 transition-colors">Skills</Link>
+    <Link to="/letter" className="ml-2 px-3 py-1 text-sm bg-white/5 hover:bg-white/10 rounded-md border border-white/10 hover:border-white/30 transition-colors">Letter</Link>
     <div className="h-4 w-px bg-white/20"></div>
     <span className="text-[10px] md:text-xs font-serif tracking-widest uppercase opacity-60">© 2025 Michael Luo</span>
   </footer>

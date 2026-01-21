@@ -608,7 +608,7 @@ const MainLayout = () => {
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ml2026portfolio.github.io/">
       <Routes>
         <Route path="/" element={<MainLayout />} />
         <Route path="/letter" element={<CoverLetter />} />
